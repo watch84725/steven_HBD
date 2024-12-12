@@ -12,10 +12,8 @@ image = Image.open(image_path)
 st.image(image, width=700)
 
 # 自訂祝福訊息
-st.subheader("輸入你的祝福訊息")
-message = st.text_area(
-    "糖糖大家可以在這輸入祝福！", "祝你生日快樂，年年有今日，歲歲有今朝！"
-)
+st.subheader("糖糖大家可以在這輸入祝福！")
+message = st.text_area("祝你生日快樂，年年有今日，歲歲有今朝！")
 
 # 顯示祝福卡
 if st.button("生成生日祝福卡"):
